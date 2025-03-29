@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
 </head>
 <body>
-
+    <H1>Home!</H1>
     <?php if (auth()->loggedIn()): ?>
         Olá, <?php echo auth()->user()->username; ?> <a href="/logout">Logout</a>
     <?php endif; ?>

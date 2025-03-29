@@ -12,6 +12,10 @@
 <body>
 
 <div class="container mt-5">
+    <?php if (session()->has('error')): ?>
+        <span class="text-danger fw-bolder"><?php echo session()->get('error') ?></span>
+    <?php endif; ?>
+
     <form action="/login" method="post">
         <input type="text" name="email" placeholder="Your email" value="teste@teste.com">
         <input type="password" name="password" placeholder="Your password" value="452826@Ge">
